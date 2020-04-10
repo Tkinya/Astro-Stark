@@ -1,0 +1,72 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin:10px;
+  padding:10px;
+  box-sizing: border-box;
+}
+
+html {
+    --primary-color:#e74c3c;
+    --secondary-color:#222;
+    --tertiary-color:#333;
+    --light-color: #fff;
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color:#00FFFF ;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: var(--light-color);
+    line-height: 2.5;
+}
+h1{
+    color:#000000;
+    position:center;
+    font-family:comic-sans;
+    font-size:40px;
+} 
+</style> 
+<body>
+    <header id="home">
+      <nav class="navbar">
+        <h1>Enchant_Edd Events Bookings</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#add-event">New Event</a></li>
+        </ul>
+      </nav>
+      <div class="welcome-event"></div>
+    </header>
+    <main>
+        <section id="events">
+            <h1 class="section-title">Events</h1>
+            <div class="events-container"></div>
+        </section>
+        <section id="add-event">
+            <h1 class="section-title">New Event</h1>
+            <form class="form">
+                <input type="text" id="name" placeholder="Name">
+                <input type="number" id="attendee" placeholder="Attendees">
+                <textarea id="description" cols="30" rows="10" placeholder="Description..."></textarea>
+                <select id="status">
+                    <option value="0">Free</option>
+                    <option value="1">Paid</option>
+                </select>
+                <button class="btn btn-primary">Save</button>
+            </form>
+        </section>
+    </main>
+
+  
+
+</body>
+</html>
